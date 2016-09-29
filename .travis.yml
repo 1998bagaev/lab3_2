@@ -1,0 +1,8 @@
+language: cpp
+matrix:
+  include:
+    - os: windows
+      env: COMPILER_NAME=gcc CXX=g++-5
+script:
+  - mkdir build && cd build
+  - cmake .. && make
